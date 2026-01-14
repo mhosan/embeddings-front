@@ -1,4 +1,4 @@
-# Geoofertas
+# Embeddings front
 
 Aplicación Angular para gestión de embeddings y búsqueda semántica con integración de modelos de IA.
 
@@ -79,7 +79,7 @@ Orquestador de servicios de IA.
 ```typescript
 export const environment = {
     production: false,
-    appName: 'Geoofertas',
+    appName: 'embeddingsFront',
     apiUrl: ''  // Usa proxy local
 };
 ```
@@ -88,7 +88,7 @@ export const environment = {
 ```typescript
 export const environment = {
     production: true,
-    appName: 'Geoofertas',
+    appName: 'embeddingsFront',
     apiUrl: 'https://embeddings-back.vercel.app'
 };
 ```
@@ -117,12 +117,30 @@ export const environment = {
 "serve": {
   "configurations": {
     "development": {
-      "buildTarget": "geoofertas:build:development",
+      "buildTarget": "embeddingsFront:build:development",
       "proxyConfig": "src/proxy.conf.json"
     }
   }
 }
 ```
+
+### Base href y URL de producción 🧭
+> La aplicación está configurada con `baseHref: "/embeddings/"` en `angular.json`. En producción la app se sirve en:
+
+`https://mhtest.alwaysdata.net/embeddings/`
+
+Por eso **no** se cambió el `baseHref`. Consecuencias y notas:
+
+- En desarrollo la app estará disponible en: `http://localhost:4200/embeddings/`.
+- Para generar un build de producción explícito con la base correcta:
+
+```bash
+ng build --configuration production --base-href /embeddings/
+```
+
+- Si necesitás probar la app temporalmente en `/` sin modificar la configuración de producción, puedo crear una configuración de `development` alternativa que use `baseHref: "/"`; esto es opcional y no altera la configuracion de producción.
+
+> **Nota:** No cambies `baseHref` si el hosting usa `/embeddings/`, ya que se romperán las rutas en producción.
 
 ## 🚀 Comandos
 

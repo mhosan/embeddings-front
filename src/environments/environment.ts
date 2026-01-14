@@ -1,5 +1,5 @@
 export const environment = {
     production: true,
-    appName: 'Geoofertas',
+    appName: 'embeddingsFront',
     apiUrl: 'https://embeddings-back.vercel.app' 
 };

@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "geoofertas": {
+    "embeddingsFront": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -86,10 +86,10 @@
           "builder": "@angular/build:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "geoofertas:build:production"
+              "buildTarget": "embeddingsFront:build:production"
             },
             "development": {
-              "buildTarget": "geoofertas:build:development",
+              "buildTarget": "embeddingsFront:build:development",
               "proxyConfig": "src/proxy.conf.json"
             }
           },
