@@ -22,7 +22,7 @@
               "zone.js"
             ],
             "tsConfig": "tsconfig.app.json",
-            "baseHref": "/embeddings/",
+            "baseHref": "/embeddings-front/",
             "assets": [
               "src/assets",
               {
