@@ -1,5 +1,5 @@
 export const environment = {
     production: true,
     appName: 'embeddingsFront',
-    apiUrl: '' 
+    apiUrl: 'https://mhosan.github.io/embeddings-front/' 
 };
