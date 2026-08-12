@@ -1,6 +1,6 @@
 # Embeddings front
 
-Aplicación Angular para gestión de embeddings y búsqueda semántica con integración de modelos de IA.
+Aplicación Angular para gestión de embeddings y búsqueda semántica con integración de modelos de IA. Actu del 12/08/2026.
 
 ## 📋 Información General
 
