@@ -138,9 +138,7 @@ Por eso **no** se cambió el `baseHref`. Consecuencias y notas:
 ng build --configuration production --base-href /embeddings/
 ```
 
-- Si necesitás probar la app temporalmente en `/` sin modificar la configuración de producción, puedo crear una configuración de `development` alternativa que use `baseHref: "/"`; esto es opcional y no altera la configuracion de producción.
-
-> **Nota:** No cambies `baseHref` si el hosting usa `/embeddings/`, ya que se romperán las rutas en producción.
+> **Nota:** No cambiar `baseHref` si el hosting usa `/embeddings/`, ya que se romperán las rutas en producción.
 
 ## 🚀 Comandos
 
